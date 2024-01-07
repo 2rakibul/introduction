@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    /* Group Utilities */
+.main{
+    @apply  relative h-screen flex items-center justify-center mx-auto flex-col-reverse bg-slate-300 dark:bg-gray-900;
+}
+.btn{
+    @apply border 
+    rounded-full 
+    text-sm font-semibold  
+    hover:text-white 
+    text-purple-500 
+   hover:bg-purple-600 
+     hover:border-transparent 
+     border-purple-500;
+     
+}
+.change-theme-btn{
+    @apply px-2 py-2 sm:top-6 sm:right-5 top-8 right-5 absolute;
+}
+.purple-btn{
+   @apply   
+    md:hover:bg-purple-600  px-2 py-1
+    focus:outline-none 
+            focus:ring-offset-2 
+            focus:ring-2 
+            focus:ring-purple-600 
+             dark:focus:border-none ;
+           ; 
+}
+.profile-img{
+  @apply  
+  h-40 w-40 rounded-full mx-auto 
+  sm:mx-0 
+  sm:flex-shrink-0  ring-4 
+  ring-blue-400 transform hover:scale-105 duration-500 ;
+}
+}

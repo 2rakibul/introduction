@@ -6,7 +6,7 @@
 @layer components{
     /* Group Utilities */
 .main{
-    @apply  overflow-y-auto mobile-height flex items-center justify-center mx-auto flex-col-reverse bg-slate-300 dark:bg-gray-900;
+    @apply  overflow-y-auto  flex items-center justify-center mx-auto flex-col-reverse bg-slate-300 dark:bg-gray-900;
 }
 .btn{
     @apply border 
@@ -41,8 +41,3 @@
 }
 }
 
-@layer utilities{
-  .mobile-height{
-    height: 100svh;
-  }
-}

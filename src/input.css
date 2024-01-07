@@ -6,7 +6,7 @@
 @layer components{
     /* Group Utilities */
 .main{
-    @apply  overflow-y-auto  h-[100svh] flex items-center justify-center mx-auto flex-col-reverse bg-slate-300 dark:bg-gray-900;
+    @apply  overflow-y-auto mobile-height flex items-center justify-center mx-auto flex-col-reverse bg-slate-300 dark:bg-gray-900;
 }
 .btn{
     @apply border 
@@ -39,4 +39,10 @@
   sm:flex-shrink-0  ring-4 
   ring-blue-400 transform hover:scale-105 duration-500 ;
 }
+}
+
+@layer utilities{
+  .mobile-height{
+    height: 100svh;
+  }
 }
